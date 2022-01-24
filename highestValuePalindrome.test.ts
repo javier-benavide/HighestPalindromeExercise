@@ -22,7 +22,7 @@ test('Hidden Test 1', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 1 failed')
+        throw new Error('Hidden Test 1 failed')
     }
 })
 
@@ -33,7 +33,7 @@ test('Hidden Test 2', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 2 failed')
+        throw new Error('Hidden Test 2 failed')
     }
 })
 
@@ -44,7 +44,7 @@ test('Hidden Test 3', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 3 failed')
+        throw new Error('Hidden Test 3 failed')
     }
 })
 
@@ -55,7 +55,7 @@ test('Hidden Test 4', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 4 failed')
+        throw new Error('Hidden Test 4 failed')
     }
 })
 
@@ -66,7 +66,7 @@ test('Hidden Test 5', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 5 failed')
+        throw new Error('Hidden Test 5 failed')
     }
 })
 
@@ -77,7 +77,7 @@ test('Hidden Test 6', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 6 failed')
+        throw new Error('Hidden Test 6 failed')
     }
 })
 
@@ -88,7 +88,7 @@ test('Hidden Test 7', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 7 failed')
+        throw new Error('Hidden Test 7 failed')
     }
 })
 
@@ -99,7 +99,7 @@ test('Hidden Test 8', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 8 failed')
+        throw new Error('Hidden Test 8 failed')
     }
 })
 
@@ -110,7 +110,7 @@ test('Hidden Test 9', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 9 failed')
+        throw new Error('Hidden Test 9 failed')
     }
 })
 
@@ -121,7 +121,7 @@ test('Hidden Test 10', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 10 failed')
+        throw new Error('Hidden Test 10 failed')
     }
 })
 
@@ -132,6 +132,6 @@ test('Hidden Test 11', () => {
     } catch(e) {
         //
         //
-        throw new Error('Hidden 11 failed')
+        throw new Error('Hidden Test 11 failed')
     }
 })
