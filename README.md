@@ -6,12 +6,16 @@ Hi! Welcome to the real-time exercise of Neat's interview.
 
 ## Configuration
 
-The first thing is to configure your environment you need to follow the next steps:
+The first thing is to configure your environment. To do this you need to follow the next steps:
 
 1. Go to [Node JS page](https://nodejs.org/es/), download and install Node JS for your SO
     - To check if node was installed correctly run `node -v` on your terminal to check your Node JS version
 
-2. Install the dependencies with "yarn install"
+2. Clone the git repository with `git clone https://github.com/javier-benavide/HighestPalindromeExercise.git`
+
+3. Go to the cloned directory
+
+4. Install the dependencies with "yarn install"
 
 ## Exercise
 
