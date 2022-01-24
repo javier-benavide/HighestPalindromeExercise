@@ -19,8 +19,8 @@ that you will never know until the end of the interview.
 */
 
 /**
- * @param {number}  numberInput - A random number.
- * @param {number} maxChanges - Maximun changes allowed to used
+ * @param {number}  numberInput - A random number (Natural number).
+ * @param {number} maxChanges - Maximun changes allowed to used (Natural number).
  * @returns {number} Highest Value Palindrome or -1 if now Palindrome
  */
 export function highestValuePalindrome(numberInput: number, maxChanges: number): number{
