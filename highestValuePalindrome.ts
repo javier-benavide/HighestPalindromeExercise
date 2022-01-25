@@ -6,7 +6,7 @@ Palindromes are texts that read the same from the left or right, for example mad
 
 Exercise description:
 
-You will be given a number and a maximum number of changes you can make as input.
+You will be given as input a number and a maximum number of changes you can make.
 Where each change is applied only to one character.
 You cannot nethier add or remove characters, so the number length must remain exactly the same.
 
@@ -21,7 +21,7 @@ that you will never know until the end of the interview.
 /**
  * @param {number}  numberInput - A Natural number.
  * @param {number} maxChanges - Maximun changes allowed to used to make 'numberInput' the Highest Value Palindrome (Natural number).
- * @returns {number} Highest Value Palindrome or -1 if result not a Palindrome
+ * @returns {number} Highest Value Palindrome or -1 if result is not a Palindrome
  */
 export function highestValuePalindrome(numberInput: number, maxChanges: number): number{
     //Write your code here
