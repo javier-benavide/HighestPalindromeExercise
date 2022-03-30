@@ -23,7 +23,43 @@ that you will never know until the end of the interview.
  * @param {number} maxChanges - Maximun changes allowed to used to make 'numberInput' the Highest Value Palindrome (Natural number).
  * @returns {number} Highest Value Palindrome or -1 if result is not a Palindrome
  */
-export function highestValuePalindrome(numberInput: number, maxChanges: number): number{
-    //Write your code here
+export function highestValuePalindrome(numberInput: number, maxChanges: number): number | Array<number>{
+    const numbers: Array<number> = Array.from(String(numberInput), Number);
+    const badPositionsIndex: Array<number> = numbers
+        .slice(0, (numbers.length / 2))
+        .reduce( (cur, n1, i) => (n1 !== numbers[numbers.length - 1 - i]) ? [...cur, i] : cur, [])
+    
+    if(badPositionsIndex.length <= maxChanges) {
+        let leftActions = maxChanges - badPositionsIndex.length;
+
+        badPositionsIndex.forEach((i) => {
+            numbers[numbers.length - 1 - i] = numbers[i] = Math.max(numbers[numbers.length - 1 - i], numbers[i]);
+        });
+
+        numbers
+            .slice(0, numbers.length/2)
+            .forEach( (n, i) => {
+                if(n !== 9) {
+                    const actions = badPositionsIndex.includes(i) ? 1 : 2; 
+                    if(leftActions >= actions) {
+                        numbers[numbers.length - 1 - i] = numbers[i] = 9;
+                        leftActions -= actions;
+                    }
+                } else {
+                    if(leftActions >= 1 && numbers[numbers.length - 1 - i] != 9){
+                        numbers[numbers.length - 1 - i] = numbers[i] = 9;
+                        leftActions -= 1;
+                    }
+                }
+            }
+        )
+
+        if(numbers.length % 2 === 1 && leftActions) {
+            numbers[Math.floor((numbers.length / 2))] = 9;
+        };
+
+        return parseInt(numbers.map((n) => n.toString()).join(""))
+    }
+
     return -1;
 }
