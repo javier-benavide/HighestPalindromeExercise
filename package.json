@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "execute": "tsc highestValuePalindrome.ts && node highestValuePalindrome.js"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
